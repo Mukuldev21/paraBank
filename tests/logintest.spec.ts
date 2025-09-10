@@ -16,3 +16,4 @@ test(' Succesful Login Test', async ({ page }) => {
     await page.getByRole('button', { name: 'Log In' }).click();
     await expect(page.locator('h1.title', { hasText: 'Accounts Overview' })).toBeVisible();
 });
+

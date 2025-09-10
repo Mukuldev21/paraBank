@@ -30,6 +30,8 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
+    screenshot: 'only-on-failure', // Add this line
+    
   },
 
   /* Configure projects for major browsers */
@@ -69,6 +71,10 @@ export default defineConfig({
     //   use: { ...devices['Desktop Chrome'], channel: 'chrome' },
     // },
   ],
+  
+    // ...existing options...
+    
+  
 
   /* Run your local dev server before starting the tests */
   // webServer: {
